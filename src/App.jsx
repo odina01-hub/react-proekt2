@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Teachers from "./pages/teachers/Teachers";
-import Students from "./pages/students/Students";
 import Layout from "./components/Layout";
-import TeachersSingle from "./pages/Single/TeachersSingle";
-import StudentsSingle from "./pages/StudentsSingle/StudentsSingle";
 import LoginPage from "./pages/login/LoginPage";
 import { useState } from "react";
+import Teachers from "./pages/login/teachers/Teachers";
+import Students from "./pages/login/students/Students";
+import TeachersSingle from "./pages/login/Single/TeachersSingle";
+import StudentsSingle from "./pages/login/StudentsSingle/StudentsSingle";
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("auth") || false);
